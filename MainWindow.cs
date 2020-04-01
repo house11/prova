@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows;
 
 
-namespace Prodotti_grafica
+namespace Prodotti_grafica // cartella del progetto
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {

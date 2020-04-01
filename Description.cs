@@ -8,6 +8,6 @@ namespace Prodotti_grafica
 
         public string Info { get; set; }
 
-        public virtual Products Products { get; set; }
+        public virtual Products Products { get; set; } //12
     }
 }
