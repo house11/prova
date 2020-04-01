@@ -8,7 +8,7 @@ namespace Prodotti_grafica
             this.Quantity = Quantity;
             this.Price = Price;
         }
-        public Products(int id, int Quantity, int Price, string Name)
+        public Products(int id, int Quantity, int Price, string Name) // prodotti
         {
             this.id = id;
             this.Quantity = Quantity;
