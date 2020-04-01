@@ -2,7 +2,7 @@ namespace Prodotti_grafica
 {
     public class Description
     {
-        public int id { get; set; }
+        public int id { get; set; > // id
         public int IdProducts { get; set; }
         public string Name { get; set; }
 
