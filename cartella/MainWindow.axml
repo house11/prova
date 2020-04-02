@@ -1,0 +1,24 @@
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prodotti_grafica"
+        xmlns:WPF="clr-namespace:VisioForge.Controls.UI.WPF;assembly=VisioForge.Controls.UI" x:Class="Prodotti_grafica.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="345" Margin="10,0,0,0">
+        <DataGrid x:Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="0,25,110,45" HorizontalAlignment="Right" Width="590"  >
+            <DataGrid.Columns>
+                <!--<DataGridTextColumn Binding="{Binding Path=TotalHeure}"   ClipboardContentBinding="{x:Null}" Header="Total Heures" Width="80"/>-->
+                <DataGridTextColumn Header="Id"  Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" />
+                <!--The Email property contains a URI.  For example "mailto:lucy0@adventure-works.com"-->
+                <DataGridHyperlinkColumn Header="Price" Binding="{Binding Price}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Description.Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Load" HorizontalAlignment="Left" Margin="695,60,0,0" VerticalAlignment="Top" Width="65" Click="Button_Click" Grid.Column="4" Height="20"/>
+        <Button Content="UP" HorizontalAlignment="Left" Margin="695,90,0,0" VerticalAlignment="Top" Width="65" Click="Button_Click2" Height="20"/>
+    </Grid>
+</Window>
